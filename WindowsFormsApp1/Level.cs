@@ -8,7 +8,8 @@ namespace WindowsFormsApp1
 {
     public class Level
     {
-        public int level_Number { get; set; } // number, initally starts from 0        public string level_Name { get; set; } //name of level - optional
+        public int level_Number { get; set; } // number, initally starts from 0
+        public string level_Name { get; set; } //name of level - optional
         public int totalCapacity { get; set; }  //total capacity
         public int availableCapacity { get; set; } // number of spots left on the current level
         private List<ParkingPlace> parkingPlaces; 
