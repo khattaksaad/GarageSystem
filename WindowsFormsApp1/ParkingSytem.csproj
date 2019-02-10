@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BF0D4FE-5B61-431A-B1FE-9F502D71C3BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LevelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelInfo.Designer.cs">
+      <DependentUpon>LevelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level.cs" />
+    <Compile Include="MangerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MangerView.Designer.cs">
+      <DependentUpon>MangerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFloor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFloor.Designer.cs">
+      <DependentUpon>NewFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingMain.cs" />
+    <Compile Include="ParkingPlace.cs" />
+    <Compile Include="ReleaseVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseVehicle.Designer.cs">
+      <DependentUpon>ReleaseVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParkVehicle_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParkVehicle_Form.Designer.cs">
+      <DependentUpon>ParkVehicle_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchForVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForVehicle.Designer.cs">
+      <DependentUpon>SearchForVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="LevelInfo.resx">
+      <DependentUpon>LevelInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MangerView.resx">
+      <DependentUpon>MangerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFloor.resx">
+      <DependentUpon>NewFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseVehicle.resx">
+      <DependentUpon>ReleaseVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkVehicle_Form.resx">
+      <DependentUpon>ParkVehicle_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchForVehicle.resx">
+      <DependentUpon>SearchForVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
